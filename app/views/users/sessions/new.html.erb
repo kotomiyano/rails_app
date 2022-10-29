@@ -1,0 +1,36 @@
+<div class="login">
+
+  <div class="logo">
+    <%= image_tag 'insta.png' %>
+  </div>
+  <h2>Instagramにログイン</h2>
+  
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"電話、メールまたはユーザー名" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "off", placeholder:"パスワード"%>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "ログイン" %>
+    </div>
+    <div class="sub">
+      <%= render "users/shared/links" %>
+    </div>
+
+    <% if devise_mapping.rememberable? -%>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <h2>私を覚える</h2>
+      </div>
+    <% end -%>
+
+    
+  <% end %>
+
+  
+</div>

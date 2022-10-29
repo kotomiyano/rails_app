@@ -1,0 +1,92 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.posts-container {
+    // width: 50%;
+    margin: 10px auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h3 {
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    
+  }
+  .posts-container [type="submit"]:not(:disabled){
+    background-color: #00acee;
+    color: #fff;
+    transition: .3s;
+    border: none;
+    border-radius: 20px;
+    padding-top: 3px;
+  }
+  .posts-container [type="submit"]:not(:disabled):hover{
+    background-color: #fff;
+    color: #00acee;
+    border: 1px solid #00acee;
+  }
+  .col {
+    border-top: solid #00acee;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  .main-box {
+    margin: 5px 0;
+    // display: flex;
+    justify-content: space-between;
+  }
+  .col-md-4{
+    text-align: left;
+  }
+  .time {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .posts-container h2{
+    font-size: 30px;
+  }
+  .posts-container h3{
+    font-size: 18px;
+    text-align: left;
+    width: 95%;
+    margin: 50px auto 0;
+  }
+  
+  .posts-container .row{
+    padding: 30px;
+  }
+  .posts-container .left-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts-container a{
+    color: red;
+  }
+  .posts-container .usern a{
+    color: #000;
+  }
+  .posts-container .left-container img{
+    border-right: 1px solid;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  .posts-container .right-container a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #00acee;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    transition: .3s;
+  }
+  .posts-container .right-container a:hover{
+    
+    color: #fff;
+    background-color: #00acee;
+  }
