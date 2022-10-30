@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:show]
-  resources :comments, only: [:create]
+  
 
   resources :posts do
     resources :likes, only: [:create, :destroy]
+    resources :comments, only: [:create]
   end
 
   resources :maps 
